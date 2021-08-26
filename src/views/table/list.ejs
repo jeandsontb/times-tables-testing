@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+
+  <div class="starter-template">
+    <h1>Escolha seu número</h1>
+    <ul class="list-unstyled" >
+      <% numbers.map(i => { %>
+        <li style="margin-top: 2px;" >
+          <a style="text-decoration: none; font-size: 16px;" href="/tables/for/<%= i %>">
+            Tabuada do número <%= i %>
+          </a>
+        </li>
+      <% }) %>
+    </ul>  
+
+  </div>
+
+<%- include('../partials/footer.ejs') %>
